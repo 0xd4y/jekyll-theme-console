@@ -4,7 +4,24 @@
 
 @import "light";
 @import "base";
+@import "minimal-mistakes";
 
 @media (prefers-color-scheme: dark) {
 	@import "dark";
+}
+
+html {
+  font-size: 16px; // change to whatever
+
+  @include breakpoint($medium) {
+    font-size: 18px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 20px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 22px; // change to whatever
+  }
 }
