@@ -36,6 +36,7 @@ A.class6:hover { color: var(--background-color); background-color: var(--base-co
 A.class7 { color: #F7F7EF; text-decoration: none; } // 0xd4y color
 A.class7:hover { color: var(--background-color); background-color: var(--base-color); }
 
+// Removes underline
 A.class5, A.class6, A.class7 {
   &:before{
     text-decoration: none;
