@@ -27,13 +27,13 @@ A.class3:hover { color: var(--background-color); background-color: var(--base-co
 A.class4 { text-decoration: underline;  color: var(--hard-color); }
 A.class4:hover { color: var(--background-color); background-color: var(--base-color); }
 
-A.class5 { color: #EDD400; text-decoration: none;  } // @ symbol
+A.class5 { text-decoration: underline; color: #EDD400; ;  } // @ symbol
 A.class5:hover { color: var(--background-color); background-color: var(--base-color); }
 
-A.class6 { color: #BABDB6; text-decoration: none;  } // Hostname color
+A.class6 { text-decoration: underline; color: #BABDB6;   } // Hostname color
 A.class6:hover { color: var(--background-color); background-color: var(--base-color); }
 
-A.class7 { color: #F7F7EF; text-decoration: none; } // 0xd4y color
+A.class7 { text-decoration: underline; color: #F7F7EF;  } // 0xd4y color
 A.class7:hover { color: var(--background-color); background-color: var(--base-color); }
 
 // Removes underline
