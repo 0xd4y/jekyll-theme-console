@@ -27,19 +27,22 @@ A.class3:hover { color: var(--background-color); background-color: var(--base-co
 A.class4 { text-decoration: underline;  color: var(--hard-color); }
 A.class4:hover { color: var(--background-color); background-color: var(--base-color); }
 
-A.class5 { color: #EDD400; text-decoration: none; display: inline-block; } // @ symbol
+A.class5 { color: #EDD400; text-decoration: none;  } // @ symbol
 A.class5:hover { color: var(--background-color); background-color: var(--base-color); }
 
-A.class6 { color: #BABDB6; text-decoration: none; display: inline-block; } // Hostname color
+A.class6 { color: #BABDB6; text-decoration: none;  } // Hostname color
 A.class6:hover { color: var(--background-color); background-color: var(--base-color); }
 
-A.class7 { color: #F7F7EF; text-decoration: none; display: inline-block; } // 0xd4y color
+A.class7 { color: #F7F7EF; text-decoration: none; } // 0xd4y color
 A.class7:hover { color: var(--background-color); background-color: var(--base-color); }
 
 A.class5, A.class6, A.class7 {
   &:before{
     text-decoration: none;
     display: inline-block;
+  }
+  &:after {
+    text-decoration: none;
   }
 }
 
