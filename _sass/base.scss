@@ -1,6 +1,46 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@0xd4y
+0xd4y /
+jekyll-theme-console
+forked from b2a3e8/jekyll-theme-console
+
+0
+0
+
+    283
+
+Code
+Pull requests
+Actions
+Projects
+Security
+Insights
+
+    Settings
+
+Update base.scss
+
+    master 
+
+@0xd4y
+0xd4y committed yesterday
+1 parent 8eca246 commit b12434b1fb3c18b16ee9190ea2d5d480bfe03975
+Showing
+with 1 addition and 1 deletion.
+
+    +1 −1 
+
+    _sass/base.scss
+
+2 _sass/base.scss
+@@ -1,58 +1,58 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
-
 /**
  * Style variables
  */
@@ -17,19 +57,35 @@ body { background-color: var(--background-color);  margin: 0 auto;  padding: 0; 
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: #9eb3ff; }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
-
 A.class2 { text-decoration: underline;  color: var(--easy-color); }
 A.class2:hover { color: var(--background-color); background-color: var(--base-color); }
-
 A.class3 { text-decoration: underline;  color: var(--medium-color); }
 A.class3:hover { color: var(--background-color); background-color: var(--base-color); }
-
 A.class4 { text-decoration: underline;  color: var(--hard-color); }
 A.class4:hover { color: var(--background-color); background-color: var(--base-color); }
+A.class5 { text-decoration: none; color: #EDD400; ;  } // @ symbol
+A.class5:hover { color: var(--background-color); background-color: var(--base-color); }
+A.class6 { text-decoration: none; color: #BABDB6;   } // Hostname color
+A.class6:hover { color: var(--background-color); background-color: var(--base-color); }
+A.class7 { text-decoration: none; color: #F7F7EF;  } // 0xd4y color
+A.class7:hover { color: var(--background-color); background-color: var(--base-color); }
+// Removes underline
+A.class5, A.class6, A.class7 {
+  &:link{
+    text-decoration: none;
+  }
+  &:before{
+    text-decoration: none;
+    display: inline-block;
+  }
+  &:after {
+    text-decoration: none;
+  }
+}
 
 @media only screen and (max-device-width: 500px) { * { font-size: $mobile-font-size !important; } }
 
-h1 { font-size: 30px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #F2F5F7; } h2 { font-size: 18px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #F2F5F7; } h3 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: var(--easy-color); } h4 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: var(--medium-color); } h5 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: var(--hard-color); } h6 { font-size: 30px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #66B2FF; }
+h1 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #F2F5F7; } h2 { font-size: 18px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #F2F5F7; } h3 { font-size: 24px; margin: 0px;  margin-top: 25px;  font-weight: bold; color: var(--easy-color); } h4 { font-size: 24px; margin: 0px;  margin-top: 25px;  font-weight: bold; color: var(--medium-color); } h5 { font-size: 24px; margin: 0px;  margin-top: 25px;  font-weight: bold; color: var(--hard-color); } h6 { font-size: 30px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #66B2FF; }
 
 /**
  * Layout
@@ -40,20 +96,17 @@ footer { color: var(--text-color);  border-top: var(--border);  margin: 20px aut
 header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
 footer { margin-bottom: 20px; }
-
 /**
  * Highlight/Markup
  */
 ::selection { background: var(--selection-background);  color: var(--selection-text); }
 ::-moz-selection { background: var(--selection-background);  color: var(--selection-text); }
-
 /**
  * Lists
  */
 :not(.menu) > ul { list-style: none;  padding-left: 0; }
 :not(.menu) > ul { list-style-type: none; }
 :not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
-
 /**
  * Header/Navigation
  */
@@ -62,7 +115,6 @@ footer { margin-bottom: 20px; }
 .menu ul li { display: inline;  margin-left: 10px; }
 .menu ul li a { text-decoration: none;  color: var(--text-color); }
 .menu ul li a:hover { text-decoration: none; color: var(--background-color); background-color: var(--base-color); }
-
 /**
  * Form
  */
@@ -76,7 +128,6 @@ input[type=submit] { font-size: $base-font-size;  font-family: $base-font-family
 input[type=submit]:hover { color: var(--background-color); background-color: var(--base-color); }
 *:focus { outline: none; }
 textarea { vertical-align: top; }
-
 /**
  * Code and syntax highlighting
  */
@@ -141,3 +192,24 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+0 comments on commit b12434b
+@0xd4y
+Attach files by dragging & dropping, selecting or pasting them.
+
+You’re not receiving notifications from this thread.
+
+    © 2021 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+Copied!
