@@ -27,6 +27,26 @@ A.class3:hover { color: var(--background-color); background-color: var(--base-co
 A.class4 { text-decoration: underline;  color: var(--hard-color); }
 A.class4:hover { color: var(--background-color); background-color: var(--base-color); }
 
+A.class5 { text-decoration: none; color: #EDD400; ;  } // @ symbol
+A.class5:hover { color: var(--background-color); background-color: var(--base-color); }
+A.class6 { text-decoration: none; color: #BABDB6;   } // Hostname color
+A.class6:hover { color: var(--background-color); background-color: var(--base-color); }
+A.class7 { text-decoration: none; color: #F7F7EF;  } // 0xd4y color
+A.class7:hover { color: var(--background-color); background-color: var(--base-color); }
+// Removes underline
+A.class5, A.class6, A.class7 {
+  &:link{
+    text-decoration: none;
+  }
+  &:before{
+    text-decoration: none;
+    display: inline-block;
+  }
+  &:after {
+    text-decoration: none;
+  }
+}
+
 @media only screen and (max-device-width: 500px) { * { font-size: $mobile-font-size !important; } }
 
 h1 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #F2F5F7; } h2 { font-size: 18px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #F2F5F7; } h3 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: var(--easy-color); } h4 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: var(--medium-color); } h5 { font-size: 24px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: var(--hard-color); } h6 { font-size: 30px; margin: 0px;  margin-top: 22px;  font-weight: bold; color: #66B2FF; }
